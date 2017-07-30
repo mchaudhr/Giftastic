@@ -1,5 +1,5 @@
-var topics = ["dog", "cat", "rabbit","elephant","buffalo","eagle","lion","Andean goose","horse", 
-        "goat", "cow", "fish"];
+var topics = ["Dog", "Cat", "Rabbit","Elephant","Buffalo","Eagle","Lion","Andean goose","Horse", 
+        "Goat", "Cow", "Fish"];
 
 
 
