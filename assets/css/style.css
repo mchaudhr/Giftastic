@@ -1,0 +1,17 @@
+.buttons {
+	padding: 5px;
+}
+
+.animalButton {
+	/*padding: 30px;*/
+	margin: 5px;
+}
+
+#submit {
+	float: right;
+}
+
+.navbar {
+	background: #DAA520;
+}
+

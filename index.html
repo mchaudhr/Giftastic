@@ -1,33 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>Giphtastic</title>
-
-
-	<script type="text/css" src="asset/style/style.css"></script>
-
-	<script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+	<title>GifTastic</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-
-
 <body>
-<h2 align="center">Be Giftastic!</h2>
-<!-- first the navbar -->
-	<nav class="navbar navbar-inverse">
+
+<nav class="navbar">
 		<div class="container-fluid">
 	    	<!-- Brand and toggle get grouped for better mobile display -->
 	    	<div class="navbar-header">
@@ -42,34 +26,56 @@
 	    	</div>
 	    	<!-- Collect the nav links, forms, and other content for toggling -->
 	    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      		<form class="navbar-form navbar-right" id="addAnimalForm">
+	      		<!-- <form class="navbar-form navbar-right" id="addAnimalForm">
 	        		<div class="form-group">
 	          			<input type="text" class="form-control" id="tvShowInput" placeholder="Add an Animal">
 	        		</div>
 	        		<button type="submit" id="addAnimal" class="btn btn-info">Submit</button>
-	      		</form>
+	      		</form> -->
+	      		
+			
+			<div class="adding">
+				
+				<input class="form-control" id="animalName" type="text" name="animalName" placeholder="Add an Animal">
+				<br>
+				<button id="submit" class="btn btn-primary">Submit</button>
+				
+			</div>
+
+			
+			
+		
+	</div>
 	    	</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 	</nav>
-	
-	<!-- begin the bootstrap container -->
-	<div class="container">
-
-		<!-- Two columns - left one has buttons, right one has gifs -->
-		<div class="row">
-			<div class="col-md-3 btn-group-vertical" role="group" id="buttonsBar">buttonsBar</div>
-			<div class="col-md-9">
-				<div class="row" id="gifsWindow"></div>
-			</div>
+		
+		<div class="container-fluid text-center">
+		<div class="buttons text-left"></div>
+		<br>
+		<br>
+		<div class="display">
+		<div id="images" class="gif"></div>
+		</div>
 		</div>
 
 
-	<!-- end the bootstrap container -->
-	</div>
 
+	<!-- actual code -->
 
+	<!-- <div class="container-fluid text-center">
+		<div class="buttons text-left"></div>
+		<div class="display">
+			<div id="images" class="col-md-8 gif"></div>
+			<div class="col-md-4 adding">
+				<label>Add an animal</label><br>
+				<input id="animalName" type="text" name="animalName"><br><br>
+				<button id="submit" class="btn btn-primary">Submit</button>
+			</div>
+		</div>
+	</div> -->
 
-<script type="text/javascript" href="asset/javascript/gmae.js"></script>
-	
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </body>
 </html>
